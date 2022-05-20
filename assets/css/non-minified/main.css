@@ -1,0 +1,219 @@
+/*! main.css 1.5.??? idk what revision number anymore! too many.  | MIT */
+
+
+/* Might move light theme classes to another css file? */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/* 
+ * Import some fonts in case it fails in the html files 
+ */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&family=Raleway:wght@300;400;600&family=Roboto:wght@300&display=swap'); */
+
+
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Center content with flexbox
+ */
+
+.centerMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden,
+ [hidden] {
+   display: none !important;
+ }
+ 
+ /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+ 
+ .invisible {
+   visibility: hidden;
+ }
+ 
+/* ==========================================================================
+   Main classes
+   Global classes for basic site theme template
+   ========================================================================== */
+
+/*
+ * Drop shadow between page and footer
+ */
+
+.dropShadowDark {
+  position: relative;
+  box-shadow: 4px 0px 12px #000000;
+  transition: box-shadow 0.3s ease;
+}
+
+
+/*
+ * Footer style declaration - pretty self explanatory
+ */
+
+.footerContainer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footerText {
+  font-family: Poppins, Arial, sans-serif;
+  line-height: 1;
+  margin-bottom: 0 !important;
+  padding-bottom: 1rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.footerTextDark {
+  color: #222;
+  opacity: 100%;
+  transition:color 0.3s ease,opacity 0.3s ease,background-color 0.3s ease!important
+}
+
+.footerDark {
+  background-color: #121212 !important;
+  transition: background-color 0.3s ease;
+}
+
+/*
+ * button theming
+ */
+
+.themeButtonDark {
+  width: 170px !important;
+  color: #fff !important;
+  opacity: 87% !important;
+  border: 1px solid #ccc !important;
+  transition: color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+}
+
+/*
+ * Make the body dark theme (mmmmmm o_o)
+ */
+
+.bodyDark {
+  background-color: #1E1E1E !important; /* self describing dark theme background */
+  color: #ffffff !important; /* white text */
+  opacity: 87% !important; /* make text 87% white, Material Design guideline suggests this for 'high emphasis
+                   and it looks good on the eye
+                  */
+  /* transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; */
+}
+
+/* 
+ * Black overlay while the page is loading
+ */
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   ========================================================================== */
+
+/* Smaller than mobile */
+@media (max-width: 400px) {
+  p { font-size: 0.7em !important;}
+  p.footerText { font-size: 0.6em !important; }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  p { font-size: 0.85em !important;}
+  p.footerText { font-size: 0.68em !important };
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  p { font-size: 1em !important;}
+  p.footerText { font-size: 0.71em !important };
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+/* ==========================================================================
+   Keyframe animations
+   
+   ========================================================================== */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+}
+  100% {
+    opacity: 1;
+}
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+@keyframes fade-in {
+  0% {opacity:0}
+  100% {opacity:1; visibility: visible;}
+}
+
+@keyframes fade-out {
+0% {opacity:1}
+100% {opacity:0; visibility: none;}
+}
+
+.reveal {
+  opacity: 0;
+  overflow: hidden;
+  animation: fade-in 1s ease forwards;
+
+}
+
+.disappear {
+opacity: 1;
+overflow: hidden;
+animation: fade-out 1s ease forwards;
+
+}
+

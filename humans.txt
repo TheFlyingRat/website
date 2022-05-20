@@ -1,0 +1,18 @@
+/* TEAM */
+	Owner: Joey (TheFlyingRat) M
+	Contact: theflyingrat [at] theflyingrat [dot] com
+	Twitter: @theflyingrat1
+	From: Melbourne, Victoria, Australia
+
+/* THANKS */
+
+	Todo: Yes
+	Twitter: No lol
+	From: My balls
+		
+
+/* SITE */
+	Last update: 2022/04/09
+	Language: English / Ratenese
+	Doctype: HTML5
+	IDE: Visual Studio Code, Notepad++, FileZilla, Photoshop, SSH, Notepad

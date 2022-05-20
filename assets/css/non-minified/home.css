@@ -1,0 +1,219 @@
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 4px dotted #fff;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightgray;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
+
+
+:root {
+    --00dp: #121212;
+    --01dp: #1e1e1e;
+    --02dp: #222222;
+    --03dp: #242424;
+    --04dp: #272727;
+    --05dp: #2c2c2c;
+    --06dp: #2e2e2e;
+    --07dp: #333333;
+    --08dp: #353535;
+    --09dp: #393939;
+    --accent: #64b5f6;
+
+    --selector: #9cdcfe;
+    --index: #ce9178;
+    --value: #93cea8;
+  }
+  
+  section {
+    height: 100%;
+  }
+  
+  .dropShadow {
+    box-shadow: 0px 0px 7px #060606;
+    position: relative;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif !important;
+    font-weight: 300 !important;
+  }
+  
+.panel.align-top {
+    align-items: flex-start;
+  }
+  
+  .panel h1 {
+    font-size: 1.8em;
+    color: white;
+    font-weight: 300;
+    margin: 0 auto;
+  }
+  .panel.description {
+    padding-bottom: 60px;
+  }
+
+  .panel p strong, .panel li strong {
+    color: white;
+    font-weight: 400;
+  }
+  .panel p code, .panel li code {
+    background-color: rgba(255,255,255,0.15);
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+  .panel li {
+    margin: 0;
+  }  
+  html, body {
+    margin: 0;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    font-family: "Signika Negative", sans-serif, Arial;
+  }
+  
+  .panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 6px 10px 10px 10px;
+    border-bottom-right-radius: 26px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    will-change: transform;
+  }
+  
+
+@keyframes danceAroundLikeYouJustDontCare {
+    20% {transform: translate(0px, 0px);}
+    40% {transform: translate(-20px, 0px) scaleY(1.12) skewX(20deg);}
+    60% {transform: translate(0px, 0px);}
+    80% {transform: translate(20px, -4px) scaleY(1.25) skewX(-20deg);}
+    100% {transform: translate(0px, 0px);}
+}
+
+.danceAroundLikeYouJustDontCare {
+    animation: danceAroundLikeYouJustDontCare 30s ease reverse infinite;
+}
+
+.revealUp{
+  opacity: 0;
+  visibility: hidden;
+}
+
+input {
+  background-color: transparent !important;
+}
+
+.iosscroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.contactInput {
+  resize: none; 
+  background-color: transparent; 
+  color: white; 
+  font-size: 0.48em; 
+  font-family: 'open sans', arial, sans-serif; 
+  border: none!important; 
+  border-bottom: 1px solid #D1D1D1!important;
+  transition: border 0.2s ease;
+}
+
+
+.contactInput:hover {
+  border-bottom: 1px solid #888 !important;
+
+}
+
+.contactInput:focus {
+  border-bottom: 1px solid #666 !important;
+}
+
+.contactInput:active {
+  border-bottom: 1px solid #444 !important;
+}
+
+.contactInput:invalid {
+  border-bottom: 1px solid #b00020 !important;
+}
+
+.bodyParagraph {
+  font-size: 0.4em !important; 
+  font-weight:100; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: auto;
+  padding: 50px;
+  background: #ffffff;
+  border: 10px solid #f2f2f2;
+}
+
+
+.x {
+  margin: 4%;
+}
+
+/* Larger than.... uhh...... literally an atom */
+@media (min-width: 0px) {
+
+}
+
+/* larger than column split */
+@media (min-width: 550px) {
+
+}
+
+
+

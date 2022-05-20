@@ -1,0 +1,8 @@
+$ Minify HTML [ AUTO ]
+$ Add more content to main page
+$ Fix hyperlinks (literally make more pages)
+$ Fix broken animation on error pages
+$ Deploy a static version to CDN but; [ DONE static.theflyingrat.com ]
+    $ Substitute PHP document updates for JS fetch() updates [ DONE ]
+    $ Aim for sub 1.3s load time [ DONE ]
+    $ Fix animations (compositing)

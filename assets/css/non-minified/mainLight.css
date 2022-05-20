@@ -1,0 +1,62 @@
+/*! mainLight.css 1.0.0  | MIT */
+
+
+/* Might move light theme classes to another css file? */
+
+
+/* ==========================================================================
+   Main classes
+   Global classes for basic site theme template
+   ========================================================================== */
+ 
+/*
+ * Drop shadow between page and footer
+ */
+ 
+.dropShadowLight {
+  position: relative;
+  box-shadow: 4px 0px 12px rgb(0 0 0 / 19%);
+  transition: box-shadow 0.3s ease;
+}
+ 
+/*
+ * Footer style declaration - pretty self explanatory
+ */
+ 
+.footerTextLight {
+  color: #E1E1E1;
+  opacity: 100%;
+  transition: color 0.3s ease, opacity 0.3s ease;
+ }
+   
+.footerLight {
+  background-color: #DFDFDF !important;
+  transition: background-color 0.3s ease;
+}
+ 
+ 
+ /*
+  * button theming
+  */
+ 
+.themeButtonLight {
+  width: 170px !important;
+  color: #222222 !important;
+  opacity: 100% !important;
+  border: 1px solid #222 !important;
+  transition: color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+}
+  
+/*
+ * Make the body light theme (please never use this.)
+ */
+
+.bodyLight {
+  background-color: #ffffff !important; /* self describing light theme background - overwrite all*/
+  color: #222; /* gray-ish text - not marked as important cause literally this is
+                    literally specified in other css documents
+                     */
+  opacity: 100% !important; /* fully gray-ish-ish text ^^^^ */
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+ 
