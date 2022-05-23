@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <!-- index.php (submit form) version 1.20220409.1 -->
+  <!-- THIS IS OUTDATED. MAIN PAGE HAS UPDATED A LOT SINCE THIS WAS LAST WORKED ON!!!! -->
+  <!-- This page still uses PHP. I am trying to migrate everything to JS. I will put the form validation on api.theflyingrat.com -->
   <head>
     <title>Submitting form</title>
     <link rel="preconnect" href="https://cdn.theflyingrat.com">
