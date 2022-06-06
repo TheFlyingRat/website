@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <!-- index.html version 1.20220522.012 CLOUDFLARE; minified edition -->
+
+  <!-- IN DEVELOPMENT !!!! -->
+  <!-- index.html version 1.20220602.95 CLOUDFLARE; minified edition -->
   <head>
     <title>Hey, I'm Joey - TheFlyingRat</title>
     <link rel="preconnect" href="https://cdn.theflyingrat.com">
@@ -68,11 +70,16 @@
       </div>
     </section>
     <section class="panel dropShadow noselect" style="background-color:var(--02dp);flex-direction:column">
+      <img srcset="https://cdn.theflyingrat.com/assets/img/head.png" alt="Cool head diagram" class="revealUp head" draggable="false" style="height: 60%; left:-250px; position:absolute; z-index:-5">
+      <img srcset="https://cdn.theflyingrat.com/assets/img/corner_right_wireframe.png" alt="Wireframe diagram" class="danceAroundLikeYouJustDontCare rightWireframe" draggable="false" style="height: min(180px, 30%); right:0px; bottom:0px; position: absolute">
       <div class="revealUp">I'M A <span id="age">??</span> YEAR OLD SOFTWARE DEVELOPER </div>
       <div>
         <a href="/about" class="revealUp">Learn more about me.</a>
       </div>
     </section>
+
+
+
     <section class="panel dropShadow noselect" style="background-color:var(--03dp);flex-direction:column">
       <div class="revealUp">I SPECIALIZE IN BACK-END WEB DEVELOPMENT AND SCRIPTING</div>
       <div>
@@ -81,10 +88,10 @@
     </section>
     <section class="panel dropShadow noselect" style="background-color:var(--04dp);flex-direction:column">
       <div class="revealUp">
-        <h2 style="font-size:inherit">CONTACT ME</h2>
+        <h2 style="font-size:inherit; transform: translateY(-200%);">CONTACT ME</h2>
       </div>
-      <div class="container">
-        <div class="revealUp">
+      <div class="container" style="transform: translate(0px, -130px) !important;">
+        <div style="height: 100%; position: absolute; width:100%;" class="revealUp">
           <form action="/contact/index.php" method="post" style="display:flex;flex-direction:column">
             <div class="row">
               <div class="six columns">
@@ -132,11 +139,12 @@
     </footer>
     <script src="https://cdn.theflyingrat.com/assets/js/main.min.js" async></script>
     <script src="https://cdn.theflyingrat.com/assets/js/smoothScroll.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer="defer" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer="defer" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.theflyingrat.com/assets/js/functions.min.js" defer="defer"></script>
     <script src="https://cdn.theflyingrat.com/assets/js/plugins.min.js" defer="defer"></script>
-    <script src="https://cdn.theflyingrat.com/assets/js/home.min.js" defer="defer"></script>
+    <!-- <script src="https://cdn.theflyingrat.com/assets/js/home.min.js" defer="defer"></script> -->
+    <script src="home.js" defer="defer"></script>
     <script>
       function init(){new smoothScroll(document,50,20)}"serviceWorker"in navigator?window.addEventListener("load",(()=>{navigator.serviceWorker.register("/serviceworker.js").then((e=>console.log("Service worker registered"))).catch((e=>console.error(`Service Worker Error: ${e}`)))})):console.log("Service Worker is not supported by browser.");const d=new Date;let year=d.getFullYear();async function getText(e,r){const t=await fetch(e),o=await t.text();document.getElementById(r).innerHTML=o}document.getElementById("year").innerHTML=year,document.getElementById("age").innerHTML=year-2006,getText("https://cdn.theflyingrat.com/motd.txt","motd"),getText("https://cdn.theflyingrat.com/revision.txt","revision");
     </script>
@@ -145,5 +153,29 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.theflyingrat.com/assets/css/main.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.theflyingrat.com/assets/css/vendor/fonts.min.css">
+
+
+    <script defer="defer">
+      gsap.to('.head', {
+        xPercent: 40,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".head",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true
+        }
+      })
+      gsap.to('.rightWireframe', {
+        xPercent: -90,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".rightWireframe",
+          start: "top center",
+          end: "bottom top",
+          scrub: true
+        }
+      })
+    </script>
   </body>
 </html>
